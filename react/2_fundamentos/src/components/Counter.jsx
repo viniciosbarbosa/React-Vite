@@ -2,9 +2,15 @@ import { useState } from "react";
 
 const Counter = () => {
   //[consultar , alterar]
-  const [count, setCounter] = useState(0);
+  const [count, setCount] = useState(0);
 
-  return <div>{count}</div>;
+  return (
+    <div>
+      {count}
+      <br />
+      <button onClick={() => setCount(count + 1)}>Mais um </button>
+    </div>
+  );
 };
 
 export default Counter;

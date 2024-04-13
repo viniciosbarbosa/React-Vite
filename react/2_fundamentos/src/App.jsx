@@ -7,6 +7,7 @@ import Father from "./components/Father";
 import Descricao from "./components/Descricao";
 import Cachorro from "./components/Cachorro";
 import Counter from "./components/Counter";
+import UserInfoForm from "./components/UserInfoForm";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
 
       {/*6.6 - useState -> hook */}
       <Counter />
+
+      {/*6.7 - multiplos estados */}
+      <UserInfoForm />
     </>
   );
 }

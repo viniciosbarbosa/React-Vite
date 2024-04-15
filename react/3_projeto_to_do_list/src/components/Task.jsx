@@ -1,8 +1,8 @@
-const Task = () => {
+const Task = ({ task, onDelete }) => {
   return (
     <li>
-      <span>Texto da tarefa</span>
-      <button>Remover</button>
+      <span>{task.text}</span>
+      <button onClick={onDelete}>Remover</button>
     </li>
   );
 };
